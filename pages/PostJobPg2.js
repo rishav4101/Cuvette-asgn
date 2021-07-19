@@ -4,7 +4,6 @@ import Multiselect from 'multiselect-react-dropdown';
 import Slider from '@material-ui/core/Slider';
 import Link from "next/link";
 import Navbar from "../components/Navbar";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 function valuetext(value) {
@@ -68,12 +67,13 @@ export default function PostJobPg2() {
         <Navbar/>
             <main className="main">
                 <div className={styles.card}>
-                <div className={styles.flex}>
-                    <Link href="/PostJobPg1">
-                        <div className={styles.headBack}>Back</div>
-                    </Link>
-                    <div className={styles.cardHead}># Intern Details</div>
-                </div>
+                    <div className={styles.flex}>
+                        <Link href="/PostJobPg1">
+                            <div className={styles.headBack}>Back</div>
+                        </Link>
+                        <div className={styles.cardHead}># Intern Details</div>
+                        <br/> <br/>
+                    </div>
                     <div className={styles.formRow}>
                         <div className={styles.formCol20}>
                             Skill
@@ -87,7 +87,7 @@ export default function PostJobPg2() {
                             />
                         </div>
                     </div>
-
+                    <br/>
                     <div className={styles.formRow}>
                         <div className={styles.formCol20}>
                             Mode
@@ -121,7 +121,7 @@ export default function PostJobPg2() {
                             <label htmlFor="fullTime"> Full Time <br/> 20hrs/week</label>
                         </div>
                     </div>
-                    
+                    <br/>
                     <div className={styles.formRow}>
                         <div className={styles.formCol40}>
                             Stipend Range
@@ -142,7 +142,7 @@ export default function PostJobPg2() {
                         />
                         </div>
                     </div>
-
+                    <br/>
                     <div className={styles.formRow}>
                         <div className={styles.formCol50}>
                             <div className={styles.formcolIn1}>
@@ -150,7 +150,7 @@ export default function PostJobPg2() {
                             </div>
                             &nbsp;
                             <div className={styles.formcolIn2}>
-                                <input className={styles.dateInput} type="text" placeholder="dd/mm/yyyy" value={formState.date} onChange={(e) => {
+                                <input className={styles.dateInput} type="text" placeholder=" DD/MM/YYYY" value={formState.date} onChange={(e) => {
                                         setFormState({...formState, date: e.target.value});
                                         console.log(formState);
                                     }} />
@@ -170,7 +170,7 @@ export default function PostJobPg2() {
                             </div>
                         </div>
                     </div>
-
+                    <br/>
                     <div className={styles.formCol50}>
                             Job Description
                     </div>
@@ -182,18 +182,12 @@ export default function PostJobPg2() {
                         }}
                         className={styles.description}
                         placeholder=
-                        "Enter the job description.
-                        Try to be as specific as possible
-                        1.
-                        2.
-                        3."
+                        "Enter the job description.&#13;&#10;Try to be as specific as possible &#13;&#10;1.&#13;&#10;2.&#13;&#10;3."
                     />
 
 
                     <div className={styles.submitWrap}>
-                        
                         <button className={styles.submitBtn} onClick={handleSubmit}>Post</button>
-                        
                     </div>
                 </div>
 

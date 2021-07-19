@@ -89,6 +89,10 @@
     height: 40px;
     font-size: 25px;
 }
+.dateInput::placeholder{
+    color: #ccc;
+    font-size: 20px;
+}
 .durationInput{
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -97,10 +101,14 @@
     height: 40px;
     font-size: 25px;
 }
+.durationInput::placeholder{
+    color: #ccc;
+    font-size: 20px;
+}
 
 .description{
     resize:none;
-    width: 90%;
+    width: 100%;
     margin:0 auto;
     padding: 30px;
     font-size: 20px;
@@ -109,8 +117,10 @@
     border-radius: 2px;
     outline: none;
 }
-
-
+.description::placeholder{
+    color: #ccc;
+    font-size: 20px;
+}
 
 .submitWrap{
     width: 100%;

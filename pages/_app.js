@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import React from "react";
 import App from "next/app";
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "../components/Theme";
 
 class MyApp extends App {
   constructor(props) {
@@ -23,7 +25,9 @@ class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     );
   }
 }

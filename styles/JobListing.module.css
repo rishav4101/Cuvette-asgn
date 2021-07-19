@@ -1,7 +1,8 @@
 .tableWrap{
     width: 70%;
     margin: 0 auto;
-    max-height: 600px;
+    max-height: 450px;
+    overflow-y: scroll;
 }
 .tableRow{
     width:100%;
@@ -9,7 +10,7 @@
     padding: 5px;
 }
 .tableHead{
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: flex-end;
     color: #4BABE1;
@@ -19,14 +20,14 @@
 .col1{
     font-size: 25px;
     color:#020B3F;
-    width: 50%;
+    width: 45%;
     text-align: left;
 }
 .col2{
     font-size: 25px;
     color:#020B3F;
-    width: 30%;
-    text-align: center;
+    width: 35%;
+    text-align: left;
 }
 .col3{
     font-size: 25px;

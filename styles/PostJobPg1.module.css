@@ -37,6 +37,10 @@
     height: 40px;
     font-size: 25px;
 }
+.locationInput::placeholder{
+    color: #ccc;
+    font-size: 20px;
+}
 .subRow{
     display: flex;
     color: #bbb;
