@@ -1,6 +1,6 @@
 import styles from "../styles/JobListing.module.css";
 import React from "react";
-import Link from "next/Link";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 export default function JobListing() {

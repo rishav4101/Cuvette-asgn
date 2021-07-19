@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import React from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function Home() {
 

@@ -2,7 +2,7 @@ import styles from "../styles/PostJobPg2.module.css";
 import React from "react";
 import Multiselect from 'multiselect-react-dropdown';
 import Slider from '@material-ui/core/Slider';
-import Link from "next/Link";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 
