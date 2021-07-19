@@ -5,6 +5,7 @@ import Slider from '@material-ui/core/Slider';
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 function valuetext(value) {
     return `${value} INR`;
@@ -14,6 +15,7 @@ export default function PostJobPg2() {
     const [p1, setP1] = React.useState(false);
     const [p2, setP2] = React.useState(false);
     const [p3, setP3] = React.useState(false);
+    const router = useRouter();
     const [formState, setFormState] = React.useState({
         mode:"",
         date:"",
@@ -44,6 +46,7 @@ export default function PostJobPg2() {
         arr.push({p1: p1, p2: JSON.stringify(formState)});
 
         localStorage.setItem("jobs", JSON.stringify(arr));
+        router.push("/JobListing")
     }
 
     const options = [{name: "nodeJs", id:1}, {name: "reactJs", id:2}, {name: "Django", id:3}, {name: "MongoDB", id:4}, {name: "DRF", id:5}]
@@ -187,9 +190,9 @@ export default function PostJobPg2() {
 
 
                     <div className={styles.submitWrap}>
-                        <Link href="/JobListing">
+                        
                         <button className={styles.submitBtn} onClick={handleSubmit}>Post</button>
-                        </Link>
+                        
                     </div>
                 </div>
 
