@@ -1,0 +1,16 @@
+/************** INDEX.JS(HOME) CSS ONLY ***************/
+.head{
+    font-size: 50px;
+}
+.PostJobBtn{
+    height:100px;
+    width:280px;
+    border-radius: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    background-color: #4BABE1;
+    font-size: 40px;
+    font-weight: 600;
+}

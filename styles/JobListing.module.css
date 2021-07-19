@@ -1,0 +1,51 @@
+.tableWrap{
+    width: 70%;
+    margin: 0 auto;
+    max-height: 600px;
+}
+.tableRow{
+    width:100%;
+    display: flex;
+    padding: 5px;
+}
+.tableHead{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #4BABE1;
+    font-size: 25px;
+    padding: 15px;
+}
+.col1{
+    font-size: 25px;
+    color:#020B3F;
+    width: 50%;
+    text-align: left;
+}
+.col2{
+    font-size: 25px;
+    color:#020B3F;
+    width: 30%;
+    text-align: center;
+}
+.col3{
+    font-size: 25px;
+    color:#020B3F;
+    width: 20%;
+    text-align: center;
+}
+.detailsBtn{
+    height:40px;
+    width:110px;
+    border-radius: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#020B3F;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

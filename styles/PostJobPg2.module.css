@@ -1,0 +1,135 @@
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card{
+    padding:40px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px #aaa;
+    min-width: 800px;
+}
+.flex{
+    display: flex;
+}
+.cardHead{
+    width: 100%;
+    font-size: 25px;
+    color:#020B3F;
+    text-align: center;
+}
+.headBack{
+    color:#020B3F;
+}
+
+
+
+.formRow{
+    display: flex;
+}
+.formCol20{
+    width: 20%;
+    font-size: 25px;
+    padding: 10px;
+    color:#020B3F;
+}
+.formCol80{
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    color:#bbb;
+    display: flex;
+}
+
+
+.formCol40{
+    width: 33%;
+    font-size: 25px;
+    padding: 10px;
+    color:#020B3F;
+}
+.formCol60{
+    width: 67%;
+    font-size: 20px;
+    padding: 10px;
+    color:#bbb;
+    display: flex;
+}
+
+.formCol50{
+    width: 50%;
+    font-size: 25px;
+    padding: 10px;
+    color:#020B3F;
+    display: flex;
+}
+
+.formColIn1{
+    display: flex;
+    width: 40%;
+    font-size: 25px;
+    color:#020B3F;
+}
+.formColIn2{
+    display: flex ;
+    width: 60%;
+    font-size: 25px;
+    color:#bbb ;
+}
+
+
+
+.dateInput{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+}
+.durationInput{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+    width: 70px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.description{
+    resize:none;
+    width: 90%;
+    margin:0 auto;
+    padding: 30px;
+    font-size: 20px;
+    min-height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+
+.submitWrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.submitBtn{
+    height:50px;
+    width:400px;
+    border-radius: 2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    background-color: #4BABE1;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

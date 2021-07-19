@@ -1,0 +1,15 @@
+.navWrap{
+    width:100%;
+    height: 80px;
+    display: flex;
+}
+.navCol1{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+.navCol1{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
