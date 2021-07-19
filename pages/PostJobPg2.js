@@ -39,10 +39,11 @@ export default function PostJobPg2() {
         const p1 = localStorage.getItem("currJobp1");
 
         var arr = localStorage.getItem("jobs");
+        arr = JSON.parse(arr);
         if(!arr){
             arr = [];
         }
-        arr = JSON.parse(arr);
+        
         arr.push({p1: p1, p2: JSON.stringify(formState)});
 
         localStorage.setItem("jobs", JSON.stringify(arr));
